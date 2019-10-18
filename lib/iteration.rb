@@ -44,15 +44,15 @@ def total_even_pairs(src)
   # the number was even. Review the operator documentation if you've forgotten
   # this!
   
-  new_array = []
+  total = 0
   row_index = 0
   while row_index < src.count do
     if src[row_index][0] % 2 == 0 && src[row_index][1] % 2 == 0 
-      new_array << src[row_index]
+      total += src[row_index]
       end
     row_index += 1
   end
-p new_array
+p total
   
   
   
